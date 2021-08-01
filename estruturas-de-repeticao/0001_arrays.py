@@ -45,3 +45,41 @@ print(na_)
 print('\nE novamente formar a palavra:')
 print(ba + na + na)
 
+
+input('\n\nVamos dar uma viajada nas ideias e explorar mais possibilidades.\nPressione ENTER!\n')
+combinacoes = []
+
+lista = [ 'x', 'y', 'z' ]
+# ÍNDICES: x = 0, y = 1, z = 2
+
+for indice in range(len(lista)):
+    #print(indice)
+    
+    if indice == 0:
+        # tupla 0
+        combinacao_0_1_2 = lista[indice], lista[1], lista[2]
+        combinacoes.append(combinacao_0_1_2)
+        #print(combinacao_0_1_2)
+        combinacao_0_2_1 = [lista[indice], lista[2], lista[1]]
+        combinacoes.append(combinacao_0_2_1)
+    
+    
+    if indice == 1:
+        # tupla 1
+        combinacao_1_0_2 = [lista[1], lista[0], lista[2]]
+        combinacoes.append(combinacao_1_0_2)
+    
+        combinacao_1_2_0 = [lista[1], lista[2], lista[0]]
+        combinacoes.append(combinacao_1_2_0)
+    
+    
+    if indice == 2:
+        # tupla 2
+        combinacao_2__1_0 = [lista[2], lista[1], lista[0]]
+        combinacoes.append(combinacao_2__1_0)
+
+        combinacao_2_0_1 = [lista[2], lista[0], lista[1]]
+        combinacoes.append(combinacao_2_0_1)
+        
+print('\n' + str(combinacoes))
+
