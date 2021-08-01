@@ -20,7 +20,7 @@ for y in range(len(alfabeto)):
     # print é a função que imprime. Aqui ela imprime o índice y de cada elemento do array a.
     print(y)
 
-input('\nA variável alfabeto é do tipo array de strings e tem como elemento cada letra do alfabeto.\nDigite ENTER para continuar!')
+input('\nA variável alfabeto é do tipo array de strings e tem como elemento cada letra do alfabeto.\nPressione ENTER para continuar!')
 
 print('\nColuna alternada com elementos do array e seus respectivos índices.')
 for y in range(len(alfabeto)):
@@ -33,7 +33,7 @@ for y in range(len(alfabeto)):
 print("""\nObserve que o elemento ' ' tem como sucessor seu próprio índice 0 na coluna.
     Assim como a tem como sucessor seu próprio índice, o número 1 pois a é o segundo elemento do array.""")
 
-input('Digite ENTER  para voltarmos a nossa tabela de colunas com elementos do alfabeto e linha com seus índices!!!')
+input('Pressione ENTER  para voltarmos a nossa tabela de colunas com elementos do alfabeto e linha com seus índices!!!')
 
 # vamos criar uma função chamada tabela
 # nossa função imprimirá as linhas e colunas da tabela
@@ -119,9 +119,16 @@ print(b)
 c = {"Linhas": lista, "Quantidade de elementos na lista": len(lista)}
 print(c)
 
-
 print( 'Matriz: {} x {}.'.format( a["Quantidade de colunas"], b[ "Quantidade de linhas" ] ) )
-
 
 array_tabela = [ a["Colunas"], b["Linhas"] ]
 print('Tabela:', array_tabela)
+
+
+# Tuplas
+print('\nTuplas associam elementos:')
+descricao = ['1º elemento [índice 0]', '2º elemento [índice 1]', '3º elemento [índice 2]']
+
+tuplas = zip(alfabeto, descricao)
+for pair in tuplas:
+    print(pair)
