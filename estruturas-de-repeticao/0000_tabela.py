@@ -105,4 +105,23 @@ def Tabela():
     Coluna()
     Linha()
 
-Tabela()         
+Tabela()
+print('\n')
+
+
+# Dicionários
+a = {"Colunas": alfabeto, "Quantidade de colunas": len(alfabeto)}
+print(a)
+
+b = {"Linhas": [l for l in range(len(lista))], "Quantidade de linhas": len(lista)}
+print(b)
+
+c = {"Linhas": lista, "Quantidade de elementos na lista": len(lista)}
+print(c)
+
+
+print( 'Matriz: {} x {}.'.format( a["Quantidade de colunas"], b[ "Quantidade de linhas" ] ) )
+
+
+array_tabela = [ a["Colunas"], b["Linhas"] ]
+print('Tabela:', array_tabela)
