@@ -52,29 +52,24 @@ combinacoes = []
 lista = [ 'x', 'y', 'z' ]
 # ÍNDICES: x = 0, y = 1, z = 2
 
+# alterna a posição das letras gerando todas as combinações possíveis
 for indice in range(len(lista)):
     #print(indice)
-    
     if indice == 0:
-        # tupla 0
         combinacao_0_1_2 = lista[indice], lista[1], lista[2]
         combinacoes.append(combinacao_0_1_2)
         #print(combinacao_0_1_2)
         combinacao_0_2_1 = [lista[indice], lista[2], lista[1]]
         combinacoes.append(combinacao_0_2_1)
     
-    
     if indice == 1:
-        # tupla 1
         combinacao_1_0_2 = [lista[1], lista[0], lista[2]]
         combinacoes.append(combinacao_1_0_2)
     
         combinacao_1_2_0 = [lista[1], lista[2], lista[0]]
         combinacoes.append(combinacao_1_2_0)
     
-    
     if indice == 2:
-        # tupla 2
         combinacao_2__1_0 = [lista[2], lista[1], lista[0]]
         combinacoes.append(combinacao_2__1_0)
 
@@ -83,3 +78,16 @@ for indice in range(len(lista)):
         
 print('\n' + str(combinacoes))
 
+
+print("""\n\nVocê pode estar se perguntando para que serve toda essa baboseira...
+        Bom, isso depende muito da sua criatividade. Mas posso te garantir que esses são exercícios de puro ócio da minha parte.""")
+
+array = [['a', 'b', 'c'],[1, 2, 3]]
+print('\nArray de arrays: ' + str(array))
+print(array[0])
+print(array[0][0])
+
+tupla = tuple(array)
+print('\nTuplas: ' + str(tupla))
+print(tupla[0])
+print(tupla[0][0])
