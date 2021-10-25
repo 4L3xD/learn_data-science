@@ -1,3 +1,4 @@
+# pip install pandas
 import pandas as pd
 
 #um dataframe é um método/função do pandas que escreve um dicionário 
