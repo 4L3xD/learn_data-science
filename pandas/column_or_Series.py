@@ -60,9 +60,14 @@ frame = DataFrame(population, columns=["cities", "population"], index=["Maior po
 #print(frame)
 
 frame['Column'] = frame.cities == "SP"
+#print(frame)
+
+frame = Series([1, 2, 3, 4], index=['a', 'b', 'c', 'd'])
+frame['g'] = 7
+#print(frame[['a', 'b', 'c', 'd']])
+
+frame.name = "numbers"
+frame.index.name = "índices"
 print(frame)
 
-
-#import numpy as np
-#frame["Maior população"] = np.arange(4.)
-#print(frame["Maior população"])
+#p. 128
